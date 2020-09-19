@@ -1,0 +1,6 @@
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Converting GML script: ${project_dir}\objects\obj_player\Create_0.gml
+Converted description /// @description Initialize Variables
+
+Game speed set to 60
