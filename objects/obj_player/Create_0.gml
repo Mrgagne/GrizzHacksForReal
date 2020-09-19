@@ -4,4 +4,4 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 7;
 movespeed = 4;
-
+health = 100;

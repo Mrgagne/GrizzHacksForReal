@@ -37,10 +37,6 @@ y += vsp;
 
 
 
-
-
-
-
 //Portal stuff. Nick dont worry.
 var portal, dest;
 
