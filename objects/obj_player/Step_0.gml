@@ -35,6 +35,29 @@ if (place_meeting(x,y+vsp,obj_wall))
 }
 y += vsp;
 
+//Grappling Hook
+active = false;
+if (mouse_check_button(mb_left))
+{
+	
+	mx = mouse_x;
+	my = mouse_y;
+	if (place_meeting(mx,my,obj_wall))
+	{
+		active = true;
+	}
+}
 
+if (active)
+{
+	gravity = 0.1;
+	x += (mx - x) * 0.1;
+	y += (my - y) * 0.1;
+}
+
+if (mouse_check_button_released(mb_left))
+{
+	active = false;
+}
 
 
