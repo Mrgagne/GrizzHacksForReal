@@ -1,6 +1,6 @@
 //Get the player's input
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
+key_right = keyboard_check(ord("D"));
+key_left = -keyboard_check(ord("A"));
 key_jump = keyboard_check_pressed(vk_space);
 
 //React to inputs
@@ -11,6 +11,30 @@ if (vsp < 10) vsp += grav;
 if (place_meeting(x,y+1,obj_wall))
 {
     vsp = key_jump * -jumpspeed
+}
+
+
+
+//Grappling Hook
+if (mouse_check_button_pressed(mb_left))
+{
+	mx = mouse_x;
+	my = mouse_y;
+	grapple_dir = point_direction(x, y, mx, my);
+	if (place_meeting(mx,my,obj_wall)) {
+		active = true;
+	} else {
+		active = false;
+	}
+}
+
+if (active)
+{
+	//gravity = 0.1;
+	//x += (mx - x) * 0.125;
+	//y += (my - y) * 0.125;
+	x += lengthdir_x(point_distance(x, y, mx, my)/grapple_speed, grapple_dir);
+	y += lengthdir_y(point_distance(x, y, mx, my)/grapple_speed, grapple_dir);
 }
 
 //Horizontal Collision
@@ -34,26 +58,6 @@ if (place_meeting(x,y+vsp,obj_wall))
     vsp = 0;
 }
 y += vsp;
-
-//Grappling Hook
-active = false;
-if (mouse_check_button(mb_left))
-{
-	
-	mx = mouse_x;
-	my = mouse_y;
-	if (place_meeting(mx,my,obj_wall))
-	{
-		active = true;
-	}
-}
-
-if (active)
-{
-	gravity = 0.1;
-	x += (mx - x) * 0.1;
-	y += (my - y) * 0.1;
-}
 
 if (mouse_check_button_released(mb_left))
 {

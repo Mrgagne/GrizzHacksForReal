@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
-
-if (active)
+if (place_meeting(x,y+vsp,obj_floor))
 {
-	draw_line(x,y,mx,my);
+	vsp = 0;
+	move_contact_solid(270,12);
 }
