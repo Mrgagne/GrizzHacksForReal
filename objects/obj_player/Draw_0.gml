@@ -1,8 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+if (state == states.grappling || shotGrapple) draw_line_width(x,y,hook.x,hook.y,3);
 
-if (active)
-{
-	draw_line(x,y,mx,my);
-}
+draw_self();

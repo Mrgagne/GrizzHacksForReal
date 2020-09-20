@@ -7,6 +7,16 @@ movespeed = 4;
 
 mx = x;
 my = y;
-active = false;
-grapple_dir = 0;
-grapple_speed = 10;
+
+manualTetherAcceleration = 0.08;
+manualTetherLength = 20;
+tetherAccelerationRate = -0.2;
+shotGrapple = false;
+
+state = states.moving;
+
+enum states
+{
+	moving,
+	grappling
+}
