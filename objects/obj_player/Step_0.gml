@@ -63,22 +63,3 @@ if (mouse_check_button_released(mb_left))
 {
 	active = false;
 }
-
-
-//Portal stuff. Nick dont worry.
-var portal, dest;
-
-portal = instance_place(x, y+1, obj_portal)
-
-if(place_meeting(x, y, portal)) {
-
-	if(keyboard_check_pressed(vk_shift)) {
-		for(i = 0; i < instance_number(obj_dest); i++){
-			dest = instance_find(obj_dest, i);
-
-			effect = instance_create_depth(x,y,-1,obj_effect);
-			effect.target = dest;
-			break;
-		}
-	}
-}
