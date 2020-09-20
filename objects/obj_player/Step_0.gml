@@ -110,4 +110,11 @@ if (place_meeting(x,y+vsp,obj_wall))
 }
 y += vsp;
 
+<<<<<<< HEAD
 
+=======
+if (mouse_check_button_released(mb_left))
+{
+	active = false;
+}
+>>>>>>> 4de25b043116bbd56fb401b40c45e4621a65d04f

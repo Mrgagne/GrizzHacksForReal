@@ -7,7 +7,6 @@ movespeed = 4;
 
 mx = x;
 my = y;
-
 manualTetherAcceleration = 0.08;
 manualTetherLength = 20;
 tetherAccelerationRate = -0.2;
@@ -20,3 +19,9 @@ enum states
 	moving,
 	grappling
 }
+
+active = false;
+grapple_dir = 0;
+grapple_speed = 10;
+
+health = 100;
