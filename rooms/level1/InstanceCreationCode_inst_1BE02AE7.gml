@@ -1,3 +1,3 @@
-targetRoom = room1;
+targetRoom = level2;
 targetX = 400;
 targetY = 381;

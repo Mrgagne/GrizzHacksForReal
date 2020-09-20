@@ -1,9 +1,9 @@
 switch(room) {
-	
-	case room0 || room1:
+
+	case level1 || level2:
 		draw_text(30, 30, "Health: " + string(health));
 		break;
-	
+
 	case startscreen:
 		var c = c_fuchsia;
 		draw_set_halign(fa_center);
