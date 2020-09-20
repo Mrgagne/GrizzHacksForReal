@@ -1,0 +1,4 @@
+telePart();
+
+target = noone;
+
