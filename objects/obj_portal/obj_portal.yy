@@ -1,8 +1,12 @@
 {
+<<<<<<< HEAD
   "spriteId": {
     "name": "Sprite7",
     "path": "sprites/Sprite7/Sprite7.yy",
   },
+=======
+  "spriteId": null,
+>>>>>>> 190e05a01e14bac9849ddbbbd1671cddd3b2f77f
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,8 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+<<<<<<< HEAD
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+=======
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+>>>>>>> 190e05a01e14bac9849ddbbbd1671cddd3b2f77f
   ],
   "properties": [],
   "overriddenProperties": [],
